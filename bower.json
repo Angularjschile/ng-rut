@@ -4,6 +4,7 @@
   "authors": [
     "Administrador <gbelmm@gmail.com>"
   ],
+  "main": "src/ngrut.js",
   "dependencies":{
       "jquery": ">=1.9",
       "angularjs": "1.2.23",
