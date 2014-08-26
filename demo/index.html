@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/angularjs/angular.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+<script src="../src/ngrut.js"></script>
+<script src="app.js"></script>
+<style>
+    /* Space out content a bit */
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Everything but the jumbotron gets side spacing for mobile first views */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Custom page header */
+    .header {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    /* Make the masthead heading the same height as the navigation */
+    .header h3 {
+        padding-bottom: 19px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+    }
+
+    /* Custom page footer */
+    .footer {
+        padding-top: 19px;
+        color: #777;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    /* Customize container */
+    @media (min-width: 768px) {
+        .container {
+            max-width: 730px;
+        }
+    }
+    .container-narrow > hr {
+        margin: 30px 0;
+    }
+
+    /* Main marketing message and sign up button */
+    .jumbotron {
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .jumbotron .btn {
+        padding: 14px 24px;
+        font-size: 21px;
+    }
+
+    /* Supporting marketing content */
+    .marketing {
+        margin: 40px 0;
+    }
+    .marketing p + h4 {
+        margin-top: 28px;
+    }
+
+    /* Responsive: Portrait tablets and up */
+    @media screen and (min-width: 768px) {
+        /* Remove the padding we set earlier */
+        .header,
+        .marketing,
+        .footer {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        /* Space out the masthead */
+        .header {
+            margin-bottom: 30px;
+        }
+        /* Remove the bottom border on the jumbotron for visual effect */
+        .jumbotron {
+            border-bottom: 0;
+        }
+    }
+</style>
+<body ng-app="demoapp" ng-controller="demo">
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">CODIGO FUENTE</a></li>
+
+        </ul>
+        <h3 class="text-muted">NG RUT</h3>
+    </div>
+
+
+<form role="form"  name="myForm">
+    <div class="form-group has-feedback" ng-class="{'has-success':myForm.rut.$error.rutValido,'has-error':!myForm.rut.$error.rutValido}">
+        <label  >INGRESE RUT</label>
+        <input type="text" class="form-control" ng-rut name="rut" ng-model="rut">
+        <span class="glyphicon   form-control-feedback" ng-class="{'glyphicon-ok':myForm.rut.$error.rutValido,'glyphicon-remove':!myForm.rut.$error.rutValido}"></span>
+    </div>
+
+
+</form>
+    </div>
+</body>
+</html>

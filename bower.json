@@ -1,0 +1,26 @@
+{
+  "name": "ng-rut",
+  "version": "0.0.1",
+  "authors": [
+    "Administrador <gbelmm@gmail.com>"
+  ],
+  "dependencies":{
+      "jquery": ">=1.9",
+      "angularjs": "1.2.23",
+      "bootstrap" : "*"
+  },
+  "description": "validador rut chile",
+  "keywords": [
+    "angularjs",
+    "rut",
+    "chile"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
