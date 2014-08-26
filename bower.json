@@ -7,8 +7,7 @@
   "main": "src/ngrut.js",
   "dependencies":{
       "jquery": ">=1.9",
-      "angularjs": "1.2.23",
-      "bootstrap" : "*"
+      "angularjs": "1.2.23" 
   },
   "description": "validador rut chile",
   "keywords": [
