@@ -1,13 +1,13 @@
 {
   "name": "ng-rut",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Administrador <gbelmm@gmail.com>"
   ],
   "main": "src/ngrut.js",
   "dependencies":{
       "jquery": ">=1.9",
-      "angularjs": "1.2.23" 
+      "angularjs": "1.2.23"
   },
   "description": "validador rut chile",
   "keywords": [
