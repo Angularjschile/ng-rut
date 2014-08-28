@@ -11,8 +11,8 @@ angular.module('ng-rut', [])
                     validaRut : function (rutCompleto) {
                         if (!/^[0-9]+-[0-9kK]{1}$/.test( rutCompleto )) return false;
                         var tmp = rutCompleto.split('-');
-                        if ( tmp[1] == 'K' ) tmp[1] = 'k';
-                        return (Fn.dv(tmp[0])) == tmp[1];
+
+                        return (Fn.dv(tmp[0])) == tmp[1].toLowerCase();
                     },
                     dv : function(T){
                         var M=0,S=1;
